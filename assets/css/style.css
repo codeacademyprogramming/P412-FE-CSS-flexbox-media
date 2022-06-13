@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+  /* flex-wrap: wrap-reverse; */
+  margin: 20px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+/* 
+    flex-direction - row
+    align-items - y axis, justify-content - x axis
+    flex-direction - column
+    align-items - x axis, justify-content - y axis
+*/
+
+.item {
+  border: 1px solid black;
+  width: 30%;
+  font-size: 40px;
+  text-align: center;
+  /* flex-grow: 1; */
+}
+
+.item:nth-child(3) {
+  order: 2;
+}
+
+.item:nth-child(5) {
+  order: 1;
+}
+
+/* 
+.item:nth-child(3) {
+  flex-grow: 2;
+} */
+
+/* 
+.item:nth-child(3) {
+  flex-shrink: 0;
+} */
